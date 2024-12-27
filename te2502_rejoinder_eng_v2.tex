@@ -1,0 +1,139 @@
+%
+% Title: Opposition of degree project
+% Template version: Don't forget to update when updating the template.
+% Update also the Word template. Keep the version numbers in both formats in sync.
+\newcommand{\theVersion}{3.2 -- January 26, 2022}
+%
+\documentclass[12pt,a4paper,twoside]{article}
+\usepackage{times}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+% --------------------------------------------
+% package "todonotes" is used for notes and comments
+% To disable all notes you can use the option "disable", see second row below:
+\usepackage[color=blue!10,textsize=footnotesize,textwidth=25mm]{todonotes}
+%\usepackage[disable]{todonotes} %passive=do not show
+% --------------------------------------------
+\usepackage[sort&compress]{natbib}
+\setcitestyle{numbers,square,comma}
+\usepackage{enumitem}
+\setlist{topsep=1ex,itemsep=0.5ex,parsep=0pt,partopsep=0pt}  % this sets the vertical spacing between list items and surrounding paragraphs
+\setlength{\bibsep}{4pt}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+% Please change the course name, if necessary.
+\newcommand{\theCourse}{TE2502: Examensarbete för civilingenjörer}
+
+% *** Do not touch the following lines. BEGIN. ***
+\title{Rejoinder for degree project\\\vspace{1mm}\small{Version \theVersion}}
+\author{\textsc{\theCourse}}
+\date{\today}  % This will automatically insert the current date
+\begin{document}
+\maketitle
+\vspace*{-5mm}
+% *** END. Do not touch the lines above. ***
+
+% *** PLEASE START HERE ***
+\noindent % Do not delete this line or add an empty line below.
+\begin{tabular}{|l|p{12.85cm}|}
+\hline
+Title         &  \\
+\hline
+Author(s)     &  Your full name as given in Ladok \\
+\hline 
+e-Mail(s)     & ...@student.bth.se \\
+\hline
+Supervisor(s) &  \\
+\hline\hline
+Opponent 1    &  \\
+\hline 
+Opponent 2    &  \\
+\hline 
+\end{tabular}
+\todo[inline,caption={}]{\textbf{Instructions:}
+For each comment, change request etc. you receive, provide an answer how you have addressed the identified issue. In general, you have three options in answering a comment:
+\begin{enumerate}
+	\item You agree with the comment and resolve the issue in the thesis. Be 
+	specific and describe \textit{how} you have fixed the issue and \textit{where}
+	the change(s) can be found in your updated document (section(s), page(s)).
+	\item The comment originates from a misunderstanding. In this case, you do 
+	not necessarily have to change your document, but maybe you can improve the
+	to make such misunderstandings less likely. In case you do not change the
+	document, you still need to motivate why you think no change is needed.
+	\item You disagree with the comment and you don’t change the thesis 
+	document. In this case, you need to motivate in your answer why you
+	think no change is needed.
+\end{enumerate}
+An answer can also be a combination of the three options described above.
+
+Don't forget to uncomment all blue boxes before you submit your document.}
+
+
+\section{Introduction}
+\todo[inline]{This section should provide a brief summary of the changes you made (or not) in response to the feedback you received.}
+
+
+\section{Response to opponent reports}
+\todo[inline]{In this section, you respond one-by-one to all comments, change requests etc. listed in the opponent reports. Using a table is just a suggestion.}
+\small{
+\begin{longtable}{p{1cm}p{6.7cm}p{7cm}}
+\toprule
+\textbf{ID} & \textbf{Comment} & \textbf{Answer} \\
+\midrule
+\endhead
+\bottomrule
+\multicolumn{3}{l}{\footnotesize{O1.1 = Opponent 1, 1st comment, etc.}}
+\endlastfoot
+	O1.1 &
+	Key terminology is not explained, e.g. X on page N. &
+	We have added explanations of X, Y and Z on page M. \\
+	O1.2 & & \\
+	O2.1 & & \\
+	O2.2 & & \\
+	...  & & \\
+\end{longtable}
+}
+
+
+\section{Response to further feedback}
+\todo[inline]{In this section, you respond one-by-one to all comments, change requests etc. that you received in addition to the ones above. This can, for example, be comments or change requests during the defense. Using a table is just a suggestion.}
+\small{
+\begin{longtable}{p{1cm}p{6.7cm}p{7cm}}
+\toprule
+\textbf{ID} & \textbf{Comment} & \textbf{Answer} \\
+\midrule
+\endhead
+\bottomrule
+\multicolumn{3}{l}{\footnotesize{O = Opponent, Exa = Examiner, Au = Person from audience, Sup = Supervisor}}
+\endlastfoot
+	O1.1 & & \\
+	O1.2 & & \\
+	O2.1 & & \\
+	O2.2 & & \\
+	Exa1 & & \\
+	Exa2 & & \\
+	Au1.1 & & \\
+	Au1.2 & & \\
+	Au1.3 & & \\
+	Au2.1 & & \\
+	Au2.2 & & \\
+	Sup1 & & \\
+	Sup2 & & \\
+\end{longtable}
+}
+
+
+\section{Further changes}
+\todo[inline]{In this section, you can summarize further changes that do not fit the sections on responses above. Typically these are solving issues that were not brought up by opponents or during the defense or changes you did to further improve the report. These changes don't need to be listed in the same level of detail as the responses above.}
+
+
+% All references are stored in a separate bib-file: thesis-refs.bib
+\bibliography{thesis-refs}
+\bibliographystyle{IEEEtranS}
+\todo[inline]{You can skip this section (including the header), if you do not have any references. If so, just uncomment the commands \textbackslash bibliography and \textbackslash bibliographystyle.}
+
+\end{document}
